@@ -9,9 +9,12 @@ import {
 
 export function FAQ() {
   return (
+
     <Accordion>
-      <AccordionItem>
-        <h1 style={{ textAlign: "center" }}>FAQ (คำถามที่พบ่อย)</h1>
+      <section id="faq">
+      <AccordionItem width="100%">
+
+        <h1 style={{ textAlign: "center" }}>FAQ (คำถามที่พบบ่อย)</h1>
         <h2>
           <AccordionButton>
             <Box as="span" flex="1"  textAlign="left">
@@ -20,7 +23,7 @@ export function FAQ() {
             <AccordionIcon />
           </AccordionButton>
         </h2>
-        <AccordionPanel pb={4}>
+        <AccordionPanel >
           A: At XYZ Company, we pride ourselves on innovation and cutting-edge
           technology. Our products are crafted with a perfect blend of
           creativity and functionality, setting them apart from the competition.
@@ -29,7 +32,7 @@ export function FAQ() {
         </AccordionPanel>
       </AccordionItem>
 
-      <AccordionItem>
+      <AccordionItem width="100%">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -50,7 +53,7 @@ export function FAQ() {
           future.
         </AccordionPanel>
       </AccordionItem>
-      <AccordionItem>
+      <AccordionItem width="100%">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -71,7 +74,7 @@ export function FAQ() {
           prompt and effective support.
         </AccordionPanel>
       </AccordionItem>
-      <AccordionItem>
+      <AccordionItem width="100%">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -91,7 +94,7 @@ export function FAQ() {
           ever-changing needs of our dynamic customer base.
         </AccordionPanel>
       </AccordionItem>
-      <AccordionItem>
+      <AccordionItem width="100%">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left">
@@ -113,6 +116,7 @@ export function FAQ() {
           offer.
         </AccordionPanel>
       </AccordionItem>
+    </section>
     </Accordion>
   );
 }
